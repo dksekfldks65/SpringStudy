@@ -1,13 +1,14 @@
-package hoon.byeungoo.springbootstudy;
+package hoon.byeungoo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootStudyApplication {
+public class SpringtomcatApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootStudyApplication.class, args);
+        SpringApplication application = new SpringApplication(SpringtomcatApplication.class);
+        application.run(args);
     }
 
 }

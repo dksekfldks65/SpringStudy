@@ -23,7 +23,7 @@ public class Holoman {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Holoman{" + "name'" + name + '\'' + ", howLong=" + howLong + '}';
     }
 

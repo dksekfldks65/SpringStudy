@@ -14,14 +14,14 @@ public class SpringBootAutoconfigurationApplication {
         application.run(args);
     }
 
-    /*
+
     @Bean
-    public Holoman holoman(){      //HolomanConfiguration Class에 이미 정의했는데 또다시 overriding 하려고해서 문제가 생길 수 있음.
-                                   //overriding 하더라도 autoconfiguration에 의해 덮어씌워짐
+    public Holoman holoman() {      //HolomanConfiguration Class에 이미 정의했는데 또다시 overriding 하려고해서 문제가 생길 수 있음.
+        //overriding 하더라도 autoconfiguration에 의해 덮어씌워짐
         Holoman holoman = new Holoman();
         holoman.setName("hoon");
         holoman.setHowLong(60);
         return holoman;
     }
-    */
+
 }
