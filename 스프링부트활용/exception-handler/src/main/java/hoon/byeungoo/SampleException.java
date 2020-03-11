@@ -1,5 +1,5 @@
 package hoon.byeungoo;
 
-public class SampleException extends RuntimeException{
+public class SampleException extends RuntimeException {
 
 }

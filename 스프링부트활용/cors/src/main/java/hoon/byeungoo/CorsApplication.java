@@ -13,7 +13,7 @@ public class CorsApplication {
 
     @GetMapping("/hello")
 
-    public String hello(){
+    public String hello() {
 
         return "Hello";
     }

@@ -22,7 +22,7 @@ public class PgSQLRunner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        try(Connection connection = dataSource.getConnection()){
+        try (Connection connection = dataSource.getConnection()) {
             System.out.println(connection);
             String URL = connection.getMetaData().getURL();
             System.out.println(URL);

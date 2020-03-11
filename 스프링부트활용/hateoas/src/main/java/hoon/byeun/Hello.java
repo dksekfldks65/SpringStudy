@@ -23,7 +23,7 @@ public class Hello {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return prefix + " " + name;
     }
 }

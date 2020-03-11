@@ -9,13 +9,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class SampleController {
 
     @GetMapping("/hello")
-    public String hell(){
+    public String hell() {
         throw new SampleException();
     }
 
     //SampleController 안에서 발생하는 SampleException은 이 핸들러를 사용한다.
     @ExceptionHandler(SampleException.class)
-    public @ResponseBody AppError sampleError(SampleException e){
+    public @ResponseBody
+    AppError sampleError(SampleException e) {
         AppError appError = new AppError();
         appError.setMessage("error.app.key");
         appError.setReason("IDK IDK IDK");

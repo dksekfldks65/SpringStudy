@@ -46,7 +46,7 @@ public class SampleControllerTest {
     }
 
     @Test
-    public void titlePageIsOk() throws Exception{
+    public void titlePageIsOk() throws Exception {
         webClient.getOptions().setThrowExceptionOnScriptError(true);
         HtmlPage page = webClient.getPage("/hello");
         assertEquals("Hello hoon", page.getTitleText());

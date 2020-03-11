@@ -16,7 +16,8 @@ import java.sql.SQLException;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
-@DataJpaTest  //슬라이싱 테스트. 임베디드 DB로 돌려야 빠름. 이 방법 추천
+@DataJpaTest
+        //슬라이싱 테스트. 임베디드 DB로 돌려야 빠름. 이 방법 추천
 //@SpringBootTest   통합테스트. 느림. 테스트용디비가 필요함. 테스트를 통해 repository를 바꾸면 디비에 테스트 데이터가 바뀜
 class AccountRepositoryTest {
 
@@ -32,7 +33,7 @@ class AccountRepositoryTest {
     @Test
     public void di() throws SQLException {
 
-        try(Connection connection = dataSource.getConnection()){
+        try (Connection connection = dataSource.getConnection()) {
             DatabaseMetaData metaData = connection.getMetaData();
             System.out.println(metaData.getURL());
             System.out.println(metaData.getDriverName());

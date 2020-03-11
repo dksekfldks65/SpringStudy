@@ -8,7 +8,7 @@ import org.springframework.hateoas.*;
 public class SampleController {
 
     @GetMapping("/hello")
-    public Resource<Hello> hello(){
+    public Resource<Hello> hello() {
         Hello hello = new Hello();
         hello.setPrefix("Hey,");
         hello.setName("saelobi");
